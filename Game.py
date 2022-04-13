@@ -3,7 +3,7 @@ from pygame.locals import *
 import random
 
 def pipe_gap():
-    return random.randint(10,22)*10
+    return random.randint(15,20)*10
 
 def pipe_frequency():
     return random.randint(15,30)*100
@@ -20,7 +20,7 @@ def main():
     last_pipe = pygame.time.get_ticks() - pipe_frequency()
     score = 0
     pass_pipe = False
-    scrool_speed = 4
+    scrool_speed = 5
     # pipe_gap = random.randint(17,20)*10
     flying = False
     game_over = False
@@ -204,7 +204,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
             if event.type == pygame.MOUSEBUTTONDOWN and flying == False and game_over == False:
-                    flying = True
+                flying = True
 
 
         pygame.display.update()
