@@ -6,4 +6,4 @@
 ```
 - Use `left button of mouse` to play the game.
 
-Note: Be use that you have python and pygame installed.
+Note: Be sure that you have python and pygame installed.
